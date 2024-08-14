@@ -1,0 +1,53 @@
+{
+  "usuarios": [
+    {
+      "nombre": "Jewel",
+      "apellido": "Herzog",
+      "edad": "24",
+      "colorFavorito": "red",
+      "id": "1"
+    },
+    {
+      "nombre": "Carmen",
+      "apellido": "Predovic",
+      "edad": "18",
+      "colorFavorito": "green",
+      "id": "2"
+    },
+    {
+      "nombre": "Alvina",
+      "apellido": "Hessel",
+      "edad": "38",
+      "colorFavorito": "indigo",
+      "id": "3"
+    },
+    {
+      "nombre": "Isaiah",
+      "apellido": "Schuppe",
+      "edad": "87",
+      "colorFavorito": "olive",
+      "id": "4"
+    },
+    {
+      "nombre": "Rhea",
+      "apellido": "Pouros",
+      "edad": "85",
+      "colorFavorito": "blue",
+      "id": "5"
+    },
+    {
+      "nombre": "Everett",
+      "apellido": "Lemke",
+      "edad": "74",
+      "colorFavorito": "blue",
+      "id": "6"
+    },
+    {
+      "nombre": "Maxwell",
+      "apellido": "Kutch",
+      "edad": "85",
+      "colorFavorito": "yellow",
+      "id": "7"
+    }
+  ]
+}
