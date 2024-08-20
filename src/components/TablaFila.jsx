@@ -3,7 +3,7 @@ import { notificacionSweet } from "./TablaFila.service";
 
 const TablaFila = ( { product, eliminarProducto, setProductoAEditar } ) => {
     
-  //console.log(product) // product = {id, nombre, categoria, }
+  
 
   const handleEliminar = () => {
     

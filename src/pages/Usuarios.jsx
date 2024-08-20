@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
-import Formulario from "./components/Formulario"
-import Tabla from "./components/Tabla"
+import Formulario from "../components/Formulario"
+import Tabla from "../components/Tabla"
+import Navbar from "../components/Navbar"
 
 /* CONTENEDOR */
-const InicioApp = () => {
+const Usuarios = () => {
   const url = import.meta.env.VITE_API_PRODUCTOS
   
   //     [estado, setEstado] -> setEstado cambia el estado. No lo puedo modificar directamente, tengo que usar le función que modifica el estado
@@ -153,6 +154,7 @@ const InicioApp = () => {
 
   return (
     <div className="container">
+      
       <Formulario 
         agregarProducto={agregarProducto}
         productoAEditar={productoAEditar}
@@ -168,4 +170,4 @@ const InicioApp = () => {
   )
 }
 
-export default InicioApp
+export default Usuarios

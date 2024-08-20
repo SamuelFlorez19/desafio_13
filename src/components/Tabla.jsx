@@ -35,39 +35,3 @@ const Tabla = ({products, eliminarProducto, setProductoAEditar}) => {
 };
 
 export default Tabla;
-
-/* 
-
-{
-  products.map(() => (
-    <TablaFila />
-  ))
-}
-
-{
-  products.map(() => {
-     return <TablaFila />
-  })
-}
-*/
-
-/* {
-  products ? 
-    (
-      <>
-        {
-            products.map((product, idx) => (
-              <TablaFila 
-                key={idx} 
-                product={product} 
-                eliminarProducto={eliminarProducto} 
-                setProductoAEditar={setProductoAEditar}
-              />
-            ))
-        }
-      </>
-  ) 
-  : 
-  <p>Todavía no se cargaron</p>
- 
-} */

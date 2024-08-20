@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-const Formulario = ({agregarProducto, productoAEditar, setProductoAEditar, editarProducto}) => { // props = { agregarProducto }
+const Formulario = ({agregarProducto, productoAEditar, setProductoAEditar, editarProducto}) => { 
 
    const formInicial = {
     id: null,
@@ -10,41 +10,31 @@ const Formulario = ({agregarProducto, productoAEditar, setProductoAEditar, edita
     colorFavorito: ''
    }
 
-   // useEffect(callback, [<referencias>])
+   
    useEffect(() => {
         console.log('Cambió el producto a editar')
         productoAEditar ? setForm(productoAEditar): setForm(formInicial)
    }, [productoAEditar])
    
 
-   //console.log(productoAEditar)
+   
    
    const [form, setForm] = useState(formInicial)
 
-   //console.log(form)
+   
 
 
-   const handleChange = e => { // Evento -> e -> evt -> evento -> event
-    //console.log(e.target.name)
-    //console.log(e.target.value)
-    // debugger
-
-    /* const obj = {
-        ...form, // Spread Operator (Todo lo que tenía el form),
-        [e.target.name]: e.target.value,
-    }
-
-    setForm(obj) */
+   const handleChange = e => { 
 
     setForm({
-        ...form, // Spread Operator (Todo lo que tenía el form),
+        ...form, 
         [e.target.name]: e.target.value,
     })
 
    }
 
    const handleSubmit = e => {
-    e.preventDefault() // Detiene el comportamiento por defecto de los formulario
+    e.preventDefault() 
     console.log('Enviando la información')
 
     /* ---------------------- */
@@ -55,7 +45,7 @@ const Formulario = ({agregarProducto, productoAEditar, setProductoAEditar, edita
     } else {
         editarProducto(form)
     }
-    //console.log(form)
+    
     handleReset()
    }
 
@@ -76,12 +66,12 @@ const Formulario = ({agregarProducto, productoAEditar, setProductoAEditar, edita
                     className="form-control" 
                     id="lbl-nombre" 
                     name="nombre" 
-                    placeholder="Ingrese el nombre"
+                    placeholder="Ingrese el Nombre"
                     value={form.nombre}
                     onChange={handleChange}
                 />
             </div>
-            {/* Campo Categoría */}
+            {/* Campo Apellido */}
             <div className="mb-3">
                 <label htmlFor="lbl-apellido" className="form-label">Apellido</label>
                 <input 
@@ -94,7 +84,7 @@ const Formulario = ({agregarProducto, productoAEditar, setProductoAEditar, edita
                     onChange={handleChange}
                 />
             </div>
-            {/* Campo Precio */}
+            {/* Campo Edad */}
             <div className="mb-3">
                 <label htmlFor="lbl-edad" className="form-label">Edad</label>
                 <input 
@@ -102,7 +92,7 @@ const Formulario = ({agregarProducto, productoAEditar, setProductoAEditar, edita
                     className="form-control" 
                     id="lbl-edad" 
                     name="edad" 
-                    placeholder="Ingrese el edad"
+                    placeholder="Ingrese la Edad"
                     value={form.edad}
                     onChange={handleChange}
                 />
@@ -115,7 +105,7 @@ const Formulario = ({agregarProducto, productoAEditar, setProductoAEditar, edita
                     className="form-control" 
                     id="lbl-colorFavorito" 
                     name="colorFavorito" 
-                    placeholder="Ingrese el color Favorito"
+                    placeholder="Ingrese el Color Favorito"
                     value={form.colorFavorito}
                     onChange={handleChange}
                 />
